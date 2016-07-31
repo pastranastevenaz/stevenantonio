@@ -14,3 +14,35 @@
  *= require_self
  */
 @import "bootstrap";
+@import "bootstrap-sprockets";
+
+/* universal */
+
+body {
+  
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.navimage {
+  height: 160%;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+}
