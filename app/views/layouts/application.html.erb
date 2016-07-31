@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#dblack">
     <title>Stevenantonio</title>
     <%= csrf_meta_tags %>
 
@@ -9,6 +12,11 @@
   </head>
 
   <body>
+
+<%= render partial: "shared/navbar" %>
+
     <%= yield %>
+
+<%= render partial: "shared/footer" %>
   </body>
 </html>
