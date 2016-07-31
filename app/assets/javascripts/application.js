@@ -14,5 +14,5 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree ./sitewide
+//= require_tree 
 //= require ./sitefiles/main
