@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'pages/index'
 
   get 'pages/about'
@@ -11,4 +12,5 @@ Rails.application.routes.draw do
   root to: "pages#index"
 
   resources :pages
+  
 end
