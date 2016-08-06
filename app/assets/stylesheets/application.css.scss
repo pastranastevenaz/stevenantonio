@@ -43,9 +43,12 @@ textarea {
 }
 
 .footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
   width: 100%;
+  background: #ccc;
+  height: 10%;
+  padding-top: 2%;
 }
 
 #logo {
