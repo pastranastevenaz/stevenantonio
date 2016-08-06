@@ -19,7 +19,8 @@
 /* universal */
 
 body {
-  
+  margin-bottom: 100px;
+  margin-top: 0px;
 }
 
 section {
@@ -28,6 +29,7 @@ section {
 
 textarea {
   resize: vertical;
+  
 }
 
 .center {
@@ -47,9 +49,9 @@ textarea {
   bottom:0;
   width: 100%;
   background: #ccc;
-  height: 10%;
+  height: 50px;
   padding-top: 2%;
-  margin-top: 5%;
+  margin-top: 50px;
   margin-bottom: 0%;
 }
 
