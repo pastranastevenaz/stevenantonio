@@ -6,7 +6,7 @@ $(document).on('turbolinks:load', function () {
 
   // Add hover effects to nav bar. Specifically adds 
   // the active class to the <li>
-  $('#about-link').on({
+  $('#logo-link, #about-link, #dropdown-link, #lessons-link, #portfolio-link').on({
     mouseenter: function () {
       $(this).addClass('active');
     },
