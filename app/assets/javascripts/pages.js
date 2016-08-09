@@ -14,10 +14,7 @@ $(document).on('turbolinks:load', function () {
       $(this).removeClass('active');
     }
   })
-
-  $('h1').hover(function () {
-
-  })
+ 
 });
 
 

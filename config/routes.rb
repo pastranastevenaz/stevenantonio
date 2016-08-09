@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'lessons/home'
+
+  get 'lessons/html_css'
+
+  get 'lessons/javascript'
+
+  get 'lessons/ruby_rails'
+
   devise_for :users
   get 'pages/index'
 
