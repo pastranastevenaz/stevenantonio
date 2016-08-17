@@ -1,6 +1,10 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 
+
+var indTxt = document.getElementById('index-text');
+
+
 $(document).on('turbolinks:load', function () {
 
 
@@ -14,6 +18,10 @@ $(document).on('turbolinks:load', function () {
       $(this).removeClass('active');
     }
   })
+
+
+  $('#index-text').slideup(1000);
+
  
 });
 
