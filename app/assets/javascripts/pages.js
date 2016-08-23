@@ -2,7 +2,7 @@
 // All this logic will automatically be available in application.js.
 
 
-var indTxt = document.getElementById('index-text');
+
 
 
 $(document).on('turbolinks:load', function () {
@@ -19,8 +19,14 @@ $(document).on('turbolinks:load', function () {
     }
   })
 
+  function slideContent(){
+  	
+  }
 
-  $('#index-text').slideup(1000);
+  var indTxt = document.getElementById('index-text');
+  indTxt.addEventListener('load', slideContent, false);
+
+
 
  
 });
