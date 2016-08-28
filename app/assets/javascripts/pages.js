@@ -19,12 +19,21 @@ $(document).on('turbolinks:load', function () {
     }
   })
 
+  //Adds a slid effect to the text content on page load.
+ 
+
+
   function slideContent(){
-  	
+
+
   }
 
   var indTxt = document.getElementById('index-text');
+  var width = window.innerWidth;
+  var divWidth = indTxt.innerWidth;
+
   indTxt.addEventListener('load', slideContent, false);
+
 
 
 
