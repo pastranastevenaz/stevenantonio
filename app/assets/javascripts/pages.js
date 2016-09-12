@@ -8,7 +8,8 @@
 $(document).on('turbolinks:load', function () {
 
 
-  // Add hover effects to nav bar. Specifically adds 
+
+  // Add hover effects to nav bar. Specifically adds
   // the active class to the <li>
   $('#logo-link, #about-link, #dropdown-link, #lessons-link, #portfolio-link').on({
     mouseenter: function () {
@@ -19,8 +20,21 @@ $(document).on('turbolinks:load', function () {
     }
   })
 
+
+/////////////////////////////
+$('.nav-side .nav-toggle').on({
+  click: function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('nav-open');
+  },
+})
+
+
+
+////////////////////////////
+
   //Adds a slid effect to the text content on page load.
- 
+//////////////////////////////////////////////////////
 
 
   function slideContent(){
@@ -34,11 +48,28 @@ $(document).on('turbolinks:load', function () {
 
   indTxt.addEventListener('load', slideContent, false);
 
+/////////////////////////////////////////////
+    //Set the Initial greeting
+//////////////////////////////////////////////
+
+  var time = new Date();
+  var hours = time.getHours();
+  var msgArea = document.getElementById('greeting');
+
+  if (hours < 12){
+    var msg="Hey! Good morning.";
+  }
+  else if(hours <18){
+    var msg="Hi! Good afternoon";
+  }
+  else {
+    var msg="Hey! Good evening.";
+  }
+
+  msgArea.innerText=msg;
 
 
-
- 
+  console.log(hours);
+  console.log(msg);
 });
-
-
-
+/////////////////////////////////////////////
