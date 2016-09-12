@@ -1,6 +1,16 @@
 <nav class="nav-side" >
-	Side contents
-	<a href="#" class="nav-toggle"></a>
+	<span class="nav-title">Contents</span>
+  <hr>
+  <div class="nav-link"><%= link_to "Home", pages_index_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "About", pages_about_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "Lessons", pages_lessons_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "Portfolio", pages_portfolio_path, :class => 'nav-content' %></div>
+  <hr id="project-divider">
+  <a href="#" class="nav-content">Link</a>
+
+	<a href="#" class="nav-toggle">
+    <%= image_tag "arrow.png", :id => 'nav-arrow' %>
+  </a>
 </nav>
 
 

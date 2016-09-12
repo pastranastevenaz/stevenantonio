@@ -7,7 +7,35 @@
 
 $(document).on('turbolinks:load', function () {
 
+  $('.nav-side .nav-toggle').on({
+    click: function(e) {
+      e.preventDefault();
+      $(this).parent().toggleClass('nav-open');
+    }
+  });
 
+  // ON HOVER ADD A SHADOW ANIMATION TO THE SIDEBAR LINKS
+  $('.nav-content').on({
+    mouseenter: function() {
+      $(this).addClass('active-nav-link');
+    },
+    mouseleave: function() {
+      $(this).removeClass('active-nav-link')
+    },
+  });
+
+  // ROTATE THE ARROW ON click
+  var value = 0
+  $('#nav-arrow').rotate({bind:{
+    click: function(){
+      value +=180;
+      $(this).rotate({
+        duration:900,
+        animateTo:value
+      })
+    }
+  }
+  });
 
   // Add hover effects to nav bar. Specifically adds
   // the active class to the <li>
@@ -20,18 +48,6 @@ $(document).on('turbolinks:load', function () {
     }
   })
 
-
-/////////////////////////////
-$('.nav-side .nav-toggle').on({
-  click: function(e) {
-    e.preventDefault();
-    $(this).parent().toggleClass('nav-open');
-  },
-})
-
-
-
-////////////////////////////
 
   //Adds a slid effect to the text content on page load.
 //////////////////////////////////////////////////////
