@@ -20,3 +20,26 @@
     margin-bottom: 20px;
     width: 75%;
 }
+
+#jumbo {
+  background-image: url(skyline.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#title-content {
+  position: relative;
+  text-align: center;
+  padding-top: 30vh;
+}
+#title-content-image {
+  width: 20%;
+  height: auto;
+}
+#title-content-text {
+  font-size: 2em;
+  color: #fff;
+}
