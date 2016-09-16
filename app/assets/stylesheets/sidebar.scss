@@ -46,6 +46,7 @@ margin-bottom: 10px;
 	margin-left: -250px;
 	transition: margin 900ms ease-in-out;
   text-decoration: none;
+  z-index: 99;
 }
 
 .nav-side.nav-open {
