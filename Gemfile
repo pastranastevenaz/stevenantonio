@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
+gem 'mail_form'
+gem 'simple_form'
 
+gem 'better_errors', group: :development
+
+gem 'guard-rails', group: :development
+gem 'guard-livereload', group: :development
+gem 'rack-livereload', group: :development
+gem 'guard-bundler', group: :development
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0'

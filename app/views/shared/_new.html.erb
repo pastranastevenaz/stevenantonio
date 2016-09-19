@@ -1,0 +1,9 @@
+<%= form_for @contact do |f| %>
+  <%= f.input :name, :required => true, :class => 'form-control'  %>
+  <%= f.input :email, :required => true, :class => 'form-control'  %>
+  <%= f.input :message, as: :text, :required => false, :input_html => {:rows => 10}, :class => 'form-control' %>
+  <div class="hidden">
+    <%= f.input :nickname, :hint => 'leave this blank' %>
+  </div>
+  <%= f.button :submit, :class => 'btn btn-primary' %>
+<% end %>
