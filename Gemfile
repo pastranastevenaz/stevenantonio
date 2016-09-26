@@ -13,6 +13,7 @@ gem 'guard-bundler', group: :development
 gem 'rails', '~> 5.0.0'
 gem 'devise'
 gem 'sendgrid-ruby'
+gem "font-awesome-rails"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
