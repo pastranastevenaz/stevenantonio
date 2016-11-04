@@ -1,41 +1,27 @@
 
+<!-- This is the jumbotron area -->
 <div class="container" id="jumbo">
-<div class="container" id="title-content">
-  <%= image_tag "mecircshadow.png", :id => "title-content-image" %>
-  <div class="container-fluid"><h1 id="title-content-text">stevenanton.io</h1></div>
+  <div class="container" id="title-content">
+    <%= image_tag "mecircshadow.png", :id => "title-content-image" %>
+    <div class="container-fluid"><h1 id="title-content-text">stevenanton.io</h1></div>
+  </div>
 </div>
-<!--
-<div class="text-content" id="index-text">
-
-<h3 id="greeting"></h3>
-<br>
+<!-- End of jumbotron area -->
 
 
-<p>My name is Steven. I am a web and software application developer specializing in web based solutions.    I love to tackle complex concerns, and love to learn new skills.</p>
+<div class="container" id="intro-content">
 
-<p>Send me a message if you are interested in working together. </p>
+  <div class="container-fluid" id="contact-form">
+    <%= render partial: "shared/about" %>
+    <hr>
+    <%= render partial: "shared/slideshow" %>
+    <hr>
+    <br>
+    <h2>Interested in working together?</h2>
+    <br>
+    <p>Send me a message, and let's change the world!</p>
+    <br>
+    <%= render partial: "contacts/new" %>
+  </div>
 
-<p>If you are interested in learning some programming, please check out my free lessons. Simply sign up to my mailing list, and you’ll be granted access to all my current and future lessons.</p>
-
-</div>
--->
-</div>
-</div>
-
-<div class="container-fluid" id="intro-content">
-  <div class="text-content" id="index-text">
-  <h3 id="greeting"></h3>
-  <br>
-  <p>My name is Steven. I am a web and software application developer specializing in web based solutions.    I love to tackle complex concerns, and love to learn new skills.</p>
-  <br>
-</div>
-<hr>
-
-<div class="container-fluid" id="contact-form">
-  <p>Send me a message if you are interested in collaborating on a project or hiring me on for a project. </p>
-
-  <%= render partial: "contacts/new" %>
-</div>
-<br>
-<br>
 </div>

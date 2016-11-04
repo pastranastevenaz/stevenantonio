@@ -19,6 +19,24 @@
 @import "font-awesome";
 /* universal */
 
+.btn-primary {
+  color: #ffffff;
+  background-color: #003E40;
+  border-color: #003E40;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #002B2C;
+  border-color: #002B2C;
+}
+
+
+
+
 body {
   font: 1em "Helvetica", sans-serif;
 	line-height: 1.4;
@@ -51,16 +69,7 @@ textarea {
   height: 160%;
 }
 
-.footer {
-  position:fixed;
-  bottom:0;
-  width: 100%;
-  background: #003E40;
-  height: 50px;
-  padding-top: 2%;
-  margin-top: 50px;
-  margin-bottom: 0%;
-}
+
 
 #logo {
   height: 170%;

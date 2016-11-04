@@ -1,13 +1,15 @@
 <nav class="nav-side" >
-	<span class="nav-title">Contents</span>
+	<span class="nav-title">Lessons</span>
   <hr>
-  <div class="nav-link"><%= link_to "Home", pages_index_path, :class => 'nav-content' %></div>
-  <div class="nav-link"><%= link_to "About", pages_about_path, :class => 'nav-content' %></div>
-  <div class="nav-link"><%= link_to "Lessons", pages_lessons_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "Programming", pages_index_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "HTML & CSS", pages_about_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "Linux", pages_lessons_path, :class => 'nav-content' %></div>
   <div class="nav-link"><%= link_to "Portfolio", pages_portfolio_path, :class => 'nav-content' %></div>
-  <hr id="project-divider">
-  <a href="#" class="nav-content">Link</a>
-
+	<br>
+	<span class="nav-title">Portfolio</span>
+  <hr>
+	<div class="nav-link"><%= link_to "This Site", pages_about_path, :class => 'nav-content' %></div>
+	<br>
 	<a href="#" class="nav-toggle">
     <%= image_tag "arrowwhite.png", :id => 'nav-arrow' %>
   </a>
