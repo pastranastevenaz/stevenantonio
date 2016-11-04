@@ -7,6 +7,8 @@
 
 $(document).on('turbolinks:load', function () {
 
+
+
   $('.nav-side .nav-toggle').on({
     click: function(e) {
       e.preventDefault();
