@@ -54,7 +54,8 @@ body {
   font: 1em "Helvetica", sans-serif;
 	line-height: 1.4;
 	font-weight: 200;
-  font-size: 20px
+  font-size: 20px;
+  color: #3e3e3f;
 }
 
 section {
@@ -86,4 +87,10 @@ textarea {
 
 #logo {
   height: 170%;
+}
+
+#comingsoon-image {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
