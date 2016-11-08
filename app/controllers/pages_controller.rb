@@ -10,4 +10,11 @@ class PagesController < ApplicationController
 
   def lessons
   end
+
+  def clock
+  end
+
+  def network
+  end
+
 end

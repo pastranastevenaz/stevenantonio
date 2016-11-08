@@ -1,16 +1,10 @@
 class LessonsController < ApplicationController
-  
-  before_action :authenticate_user!
-  
-  def home
+  def programming
   end
 
-  def html_css
+  def html
   end
 
-  def javascript
-  end
-
-  def ruby_rails
+  def linux
   end
 end

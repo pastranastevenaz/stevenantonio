@@ -1,23 +1,18 @@
 require 'test_helper'
 
 class LessonsControllerTest < ActionDispatch::IntegrationTest
-  test "should get home" do
-    get lessons_home_url
+  test "should get programming" do
+    get lessons_programming_url
     assert_response :success
   end
 
-  test "should get html_css" do
-    get lessons_html_css_url
+  test "should get html" do
+    get lessons_html_url
     assert_response :success
   end
 
-  test "should get javascript" do
-    get lessons_javascript_url
-    assert_response :success
-  end
-
-  test "should get ruby_rails" do
-    get lessons_ruby_rails_url
+  test "should get linux" do
+    get lessons_linux_url
     assert_response :success
   end
 

@@ -1,14 +1,17 @@
 <nav class="nav-side" >
 	<span class="nav-title">Lessons</span>
   <hr>
-  <div class="nav-link"><%= link_to "Programming", pages_index_path, :class => 'nav-content' %></div>
-  <div class="nav-link"><%= link_to "HTML & CSS", pages_about_path, :class => 'nav-content' %></div>
-  <div class="nav-link"><%= link_to "Linux", pages_lessons_path, :class => 'nav-content' %></div>
-  <div class="nav-link"><%= link_to "Portfolio", pages_portfolio_path, :class => 'nav-content' %></div>
-	<br>
+  <div class="nav-link"><%= link_to "Programming", lessons_programming_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "HTML & CSS", lessons_html_path, :class => 'nav-content' %></div>
+  <div class="nav-link"><%= link_to "Linux", lessons_linux_path, :class => 'nav-content' %></div>
+
 	<span class="nav-title">Portfolio</span>
   <hr>
-	<div class="nav-link"><%= link_to "This Site", pages_about_path, :class => 'nav-content' %></div>
+	<div class="nav-link"><%= link_to "This Site", projects_thissite_path, :class => 'nav-content' %></div>
+	<div class="nav-link"><%= link_to "Network Widget", projects_network_path, :class => 'nav-content' %></div>
+	<div class="nav-link"><%= link_to "Android Clock", projects_clock_path, :class => 'nav-content' %></div>
+	<div class="nav-link"><%= link_to "News Aggregator", projects_news_path, :class => 'nav-content' %></div>
+
 	<br>
 	<a href="#" class="nav-toggle">
     <%= image_tag "arrowwhite.png", :id => 'nav-arrow' %>

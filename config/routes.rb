@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'projects/thissite'
+
+  get 'projects/network'
+
+  get 'projects/clock'
+
+  get 'projects/news'
+
+  get 'lessons/programming'
+
+  get 'lessons/html'
+
+  get 'lessons/linux'
+
   get 'lessons/home'
 
   get 'lessons/html_css'
