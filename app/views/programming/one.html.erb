@@ -1,0 +1,86 @@
+<div class="jumbotron lesson-title" >
+  <div class="container" id="title-content">
+  <h1 class="center">Programming</h1>
+  <!-- Instert an image of a computer with my logo in the screen -->
+  <h2 class="center">&#60;/&#62;</h2>
+  </div>
+</div>
+
+<div class="lesson-contents">
+  <h2>Lesson 2</h2>
+  <br>
+  <h3>Intro</h3>
+  <p>We’ll start our journey with a brief description of the path ahead. We’ll start with programming basics similar to most programming languages. We’ll be using the Ruby programming language. We’ll work with strings, numbers, data structures, and more. We’ll then build a few short projects that grow in complexity. We’ll learn to make apps with graphic user interfaces (GUI’s). We’ll even jump over to the web and build a Rails web app with moderate complexity. </p><br>
+
+  <p>You’ll learn quite a bit in this tutorial, and I hope you have fun. </p><br>
+
+  <!-- ITALICS -->
+  <em>If you happen to be reading along as these lessons are published, please feel free to contact me with your thoughts. </em><br>
+
+  <p class="hideme">Ruby, like other programming languages have basic building blocks that are used to build larger, more complex abstractions, components, and interfaces. These basic building blocks come in different data types. The most easily grasped data type is arguably the Number. A number, in the context of the Ruby programming language, can be thought of as a space in the memory of the computer, which holds a value of zero or greater. It is stored as either an Integer or a float.</p><br>
+
+  <p class="hideme">There are other data types, like Strings, Booleans, Arrays, and Hashes. They, and more, provide the basic tools used when building something with the Ruby language. </p><br>
+
+  <h3 class="hideme">How do I write a Ruby program? </h3><br>
+
+  <p class="hideme">Ruby programs can be written in an interactive ruby terminal. The IRB, which can be launched from the terminal, or command prompt, allows one to write and run ruby programs in a terminal environment. This is great for writing short scripts, for example, checking how a small bit of code will work in an environment, before deciding to save it as a Ruby file. </p><br>
+
+  <p class="hideme">Ruby programs can also be written using a text editor, and saved as a <em>.rb</em> file. A file called <em>myfile.rb</em> can be run from the terminal with the command </p><br>
+
+  <blockquote class="hideme">your@computer ~ $ ruby myfile.rb</blockquote><br>
+
+  <p class="hideme">Granted we are in the right directory, entering that command in the terminal would start that file, run through the lines in that file, line by line, following what was written by the programmer. It would interact with other files, should the programmer write that function into the file. It can interact with a user, and it can be closed or destroyed. </p><br>
+
+  <h3 class="hideme">How to install Ruby<h3><br>
+
+  <p class="hideme">Ruby is very easy to get up and running. Most Linux distributions come with Ruby pre-installed. Windows has a simple Ruby installer which can be found at <a href="http://rubyinstaller.org/">rubyinstaller.org</a>. However, this tutorial will be Linux focused, so I will not be covering that. Using your Linux distribution’s package manager is the simplest way to get up and running with Ruby. I would however, recommend a version manager to install and manage your Ruby versions.</p><br>
+
+  <p class="hideme">I use and recommend RVM. With it, one can have multiple versions of Ruby installed on one machine, and switch as needed. While this may not be important while learning the basics, once we are further along, we may find certain tools may not work with some versions of Ruby, and we may need swap to a different version. </p><br>
+
+  <p class="hideme">Installing RVM can be tricky for beginners, although with some persistence it is very doable. There are many tutorials available online to guide you in doing so. This tutorial, however, will not cover the topic. </p><br>
+
+  <h3 class="hideme">Let's Start!</h3><br>
+
+  <p class="hideme">We will start by creating and opening a new file in our text editor. We’ll call this file firstapp.rb. This can be done using a window manager, or your operating system’s graphic user interface. However, I would recommend learning to navigate using your terminal. The following serves as a brief intro tutorial to the Linux terminal. </p>
+
+  <h3 class="hideme">Create our workspace</h3><br>
+
+  <p class="hideme">Start by opening a terminal. You’ll be in your home directory. We’ll first navigate into our <em>/home/Documents</em> directory. </p><br>
+
+  <blockquote class="hideme">~ $ cd /Documents</blockquote><br>
+
+  <p class="hideme">This command will navigate our terminal into the  /home/Documents directory. Our terminal prompt will show the directory it’s presently in. Any commands we issue the terminal will generally run in the directory the terminal is currently in. However, there are global commands, which can be run from any directory. </p><br>
+
+  <p class="hideme">In this directory, we are going to create a new folder to house our ruby curriculum projects. In the terminal enter the following command.</p>
+
+
+  <blockquote class="hideme">~/Documents $ mkdir rubyprojects</blockquote><br>
+
+  <p class="hideme">That command told our computer to make a new directory called <em>rubyprojects.</em></p><br> <p class="hideme">Now use the <em>cd</em> command we used earlier to navigate into the folder we just made.</p></br>
+
+  <div class="container-fluid" id = "think-point">
+    <div class="think-text center">
+      Try to remember the command we used.</br><br>
+      <p class="hideme center small" id="link-think"><a href="#">Link to a modal with gif of video tutorial</a></p>
+    </div>
+  </div>
+  <br><br>
+
+   <blockquote class="hideme">~/Documents $ cd rubyprojects</blockquote></br>
+
+   <p class="hideme">Now we’re in our working directory, and we are going to create our ruby file with the following command.</p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ touch firstapp.rb</blockquote><br>
+
+   <p class="hideme">Our file is now created. We can check to make sure it’s there, by using the terminal command to list all the files and folders in the current directory. The command, ls will do that for us.</p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ ls</blockquote></br>
+
+   <p class="hideme">You’ll notice, after you input the command, the terminal talks back to you. It displays and lists all the files in the directory it’s currently in. Currently there is only one file in our recently made directory. Therefore, your output should look like this.</p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ ls<br>firstapp.rb
+   </div>></blockquote></br>
+
+   <p class="hideme">We can also ask the terminal what directory we are presently working with, using the pwd command. It will output the present working directory.</p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ pwd</blockquote><br>

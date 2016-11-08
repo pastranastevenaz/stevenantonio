@@ -12,16 +12,22 @@
 <div class="box" id="intro-content">
 
   <div class="container-fluid" id="contact-form">
+    <div class="hideme">
     <%= render partial: "shared/about" %>
+    </div>
     <hr>
+    <div class="hideme">
     <%= render partial: "shared/slideshow" %>
-    <hr>
+    </div>
+    <hr class="hideme">
     <br>
-    <h2>Interested in collaborating?</h2>
+    <h2 class="hideme">Interested in collaborating?</h2>
     <br>
-    <p>Send me a message, and let's make something.</p>
+    <p class="hideme">Send me a message, and let's make something.</p>
     <br>
+    <div class="hideme">
     <%= render partial: "contacts/new" %>
+    </div>
     <br>
   </div>
 

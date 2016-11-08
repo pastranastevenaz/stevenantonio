@@ -50,6 +50,10 @@
 
 //////////////////////////////////////////////
 
+.jumbotron {
+  height: 100vh;
+}
+
 body {
   font: 1em "Helvetica", sans-serif;
 	line-height: 1.4;
@@ -93,4 +97,10 @@ textarea {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+}
+
+
+blockquote {
+  background: #eee;
+  font-family: monospace;
 }

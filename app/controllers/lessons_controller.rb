@@ -7,4 +7,8 @@ class LessonsController < ApplicationController
 
   def linux
   end
+
+  def android
+  end
+  
 end
