@@ -31,7 +31,7 @@
 
   <p class="hideme">Granted we are in the right directory, entering that command in the terminal would start that file, run through the lines in that file, line by line, following what was written by the programmer. It would interact with other files, should the programmer write that function into the file. It can interact with a user, and it can be closed or destroyed. </p><br>
 
-  <h3 class="hideme">How to install Ruby<h3><br>
+  <h3 class="hideme">How to install Ruby</h3><br>
 
   <p class="hideme">Ruby is very easy to get up and running. Most Linux distributions come with Ruby pre-installed. Windows has a simple Ruby installer which can be found at <a href="http://rubyinstaller.org/">rubyinstaller.org</a>. However, this tutorial will be Linux focused, so I will not be covering that. Using your Linux distribution’s package manager is the simplest way to get up and running with Ruby. I would however, recommend a version manager to install and manage your Ruby versions.</p><br>
 
@@ -79,8 +79,78 @@
    <p class="hideme">You’ll notice, after you input the command, the terminal talks back to you. It displays and lists all the files in the directory it’s currently in. Currently there is only one file in our recently made directory. Therefore, your output should look like this.</p><br>
 
    <blockquote class="hideme">~/Documents/rubyprojects $ ls<br>firstapp.rb
-   </div>></blockquote></br>
+   </blockquote><br>
 
    <p class="hideme">We can also ask the terminal what directory we are presently working with, using the pwd command. It will output the present working directory.</p><br>
 
    <blockquote class="hideme">~/Documents/rubyprojects $ pwd</blockquote><br>
+
+   <p class="hideme">The terminal will output the directory we’re navigating into. It appears directly below the command we just entered.</p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ pwd<br>/home/your/Documents/projects</blockquote><br>
+
+   <p class="hideme">Now we can use our terminal to open the file as well. Opening a file from the terminal requires a two part command. First you will the tell the terminal what application to use to open the file, then we tell it the name of the file to open.</p><br>
+
+   <p class="hideme">If using the atom text editor, our command will look like this.></p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ atom firstapp.rb</blockquote><br>
+
+   <p class="hideme">If using sublime text, our command will look like this. </p><br>
+
+   <blockquote class="hideme">~/Documents/rubyprojects $ subl firstapp.rb</blockquote><br>
+
+   <p class="hideme">This principle applies not just to text editors but to most files and applications in the terminal. We’ve so far only scratched the surface of learning how to use the Linux terminal. I recommend learning to effectively use the terminal. It will make your life much easier. Also, you’ll make most people think you’re some type of computer god, simply because you know how to type some simple commands into the terminal. Please check out my “Learn to Terminal” lesson if you’re interested in picking up some important terminal basics.</p><br>
+
+   <hr class="hideme">
+
+   <h3 class="hideme">Our first application</h3><br>
+
+   <p class="hideme">We’ve now opened our file in the text editor and are ready to write some Ruby code. We are going to start really simple. We will write a short program that outputs a greeting to the terminal. In doing so, we will learn about variables and strings. </p><br>
+
+   <h3 class="hideme">What is a String?</h3><br>
+
+   <p class="hideme">In the real world, a string is either material like cotton or hemp twisted together to form a thin length, or a set of things tied or threaded together
+on a thin cord. We can use the latter definition to visualize what a string is in programing. Strings are used to sequence characters in order to form words, patterns, etc. If we were to represent a name, we would use the string data type to do so. We can perform actions on strings. We can reverse the order of their characters. We can capitalize certain letter, or add characters. We can also output them to a screen or terminal, which is what we will be doing in our first exercise.</p><br>
+
+  <h3 class="hideme">What is a variable?</h3><br>
+
+  <p class="hideme">A variable, much like in mathematics, is like an empty box. We can use variables to store different values and data types. Generally we can name our variables anything we’d like. However, it is good practice to give our variables names which describe the information they hold. For example, We can create a variable called greeting. We can then assign a value to that variable. In our first exercise we will assign a value of Hello World to the greeting variable.</p><br>
+
+  <p class="hideme">Let’s return to the text editor. Enter and save the following bit of code in our <em class="hideme">firstapp.rb</em> file.</p><br>
+
+  <blockquote class="hideme">greeting = "Hello World!"<br><br>puts greeting</blockquote><br>
+
+  <p class="hideme">Let’s now dissect what we just wrote. First we declared and initialized a variable called greeting. Some languages require us to tell the interpreter or compiler what type of variable we are declaring or initializing. Other’s require us to simply tell it we are declaring or initialing a variable. In the Ruby language, we do not need to do any of those. Ruby simply knows what we are trying to do, which is one reason why Ruby is a wonderful language to learn to program with.</p><br>
+
+  <em class="hideme"><strong>Declaring a variable means you are telling the computer the variable exists. Initializing a variable means you are assigning a value to to it.</strong></em><br><br>
+
+  <p class="hideme">The same line of code written in Java would look like this.</p><br>
+
+  <blockquote class="hideme">String greeting = “Hello World!”;</blockquote><br>
+
+  <p class="hideme">The Same line of code written in JavaScript would look like this.</p><br>
+
+  <blockquote class="hideme">var greeting = “Hello World!”;</blockquote><br>
+
+  <p class="hideme">Notice the subtle differences. Java expects you to tell it what data type your variable will be. JavaScript, however only wants to be told we are declaring a variable. We do so with the <em>var</em> keyword in front of the variable declared. These two languages also expect us to tell it when a statement is complete by using the semicolon. Ruby does not need this.</p><br>
+
+  <p class="hideme">Next we initialized the variable by giving it a value. We gave it the value of <em>Hello World!</em> Strings, in Ruby, must be surrounded by quotes. We can use single or double quotes. While there is a difference. For the time being, we will disregard that, and simply use double quotes.</p><br>
+
+  <p class="hideme">The second line has the keyword puts followed by the variable greeting. When Ruby sees the keyword puts, it will output some information to the terminal. In this case, we are asking Ruby to output what is stored in the greeting variable.</p><br>
+
+  <p class="hideme">That’s it! We’ve written our first Ruby program. How do we run this program? Simple. We go back to the terminal and tell the terminal to open it using Ruby. Similar to how we asked the terminal to open our firstapp.rb file using Atom or Sublime text; we will do the same here, except we will precede the filename with Ruby instead of the text editor. Enter the following command in the terminal.</p><br>
+
+  <blockquote class="hideme">~/Documents/rubyprojects $ ruby firstapp.rb</blockquote><br>
+
+  <p class="hideme">That simple command will open our file using the ruby interpreter. It will run line by line, executing every single command in the order we have written it. It will first create the variable and assign a value to it, and than it will output the greeting. You should see something similar to this.</p><br>
+
+  <blockquote class="hideme">~/Documents/rubyprojects $ ruby firstapp.rb<br>Hello World!</blockquote><br>
+
+  <p class="hideme">Congratulations! You’ve written your first Ruby program! You’ve now call yourself a programmer. Although, I wouldn’t say it with too much bravado. We’ve still got quite a bit to learn. I hope you’ve enjoyed our first lesson, and look forward to building some more projects with you. In the next lesson we will improve our <em>firstapp</em> and add more data types and variables.</p><br><br>
+
+  <div class="hideme center">
+    | Next >
+  </div>
+
+
+</div>
